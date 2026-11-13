@@ -4,207 +4,485 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sebastian's 3rd Birthday!</title>
+<title>Sebastian | Third Birthday</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior:smooth; }
 
 body {
-    font-family: 'Georgia', serif;
-    background: linear-gradient(135deg, #eaf4fb, #fff5e8);
-    color: #455d70;
-    text-align: center;
-    min-height: 100vh;
-    padding: 30px 15px;
+  background:#f8f4ed;
+  color:#625344;
+  font-family:'Poppins',sans-serif;
+  text-align:center;
 }
 
-.invitation {
-    max-width: 650px;
-    margin: auto;
-    padding: 45px 25px;
-    background: #fffdf8;
-    border: 5px double #d6b46c;
-    border-radius: 25px;
-    box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+.hero {
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:25px;
+  background:
+    linear-gradient(rgba(248,244,237,.72),rgba(248,244,237,.88)),
+    url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1400');
+  background-size:cover;
+  background-position:center;
 }
 
-.balloons {
-    font-size: 42px;
-    margin-bottom: 15px;
+.cover {
+  max-width:600px;
+  width:100%;
+  padding:65px 25px;
+  border:1px solid #c9aa78;
+  background:rgba(255,253,248,.90);
+  box-shadow:0 10px 40px #8e79532b;
 }
 
-.small-heading {
-    color: #b58c49;
-    font-size: 18px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
+.cover .top {
+  letter-spacing:5px;
+  text-transform:uppercase;
+  font-size:12px;
+  color:#a78a5d;
 }
 
-h1 {
-    font-size: clamp(36px, 8vw, 55px);
-    color: #648ca8;
-    margin: 20px 0 10px;
+.script {
+  font-family:'Great Vibes',cursive;
+  font-size:65px;
+  color:#ae9062;
+  margin:25px 0 5px;
 }
 
-.age {
-    font-size: 90px;
-    color: #d6ad62;
-    font-weight: bold;
-    margin: 5px;
+.cover h1 {
+  font-family:'Playfair Display',serif;
+  font-size:43px;
+  font-weight:400;
 }
 
-.subtitle {
-    font-size: 20px;
-    color: #987a51;
-    margin-bottom: 25px;
+.number {
+  font-family:'Playfair Display',serif;
+  font-size:100px;
+  color:#b69a6c;
+  line-height:1.2;
+}
+
+button {
+  cursor:pointer;
+  border:none;
+  background:#a88b60;
+  color:white;
+  padding:14px 30px;
+  letter-spacing:2px;
+  margin-top:30px;
+  font-family:'Poppins',sans-serif;
+  transition:.3s;
+}
+
+button:hover {
+  background:#806744;
+}
+
+section {
+  padding:85px 20px;
+  max-width:900px;
+  margin:auto;
+}
+
+.eyebrow {
+  text-transform:uppercase;
+  letter-spacing:4px;
+  color:#aa9068;
+  font-size:12px;
+}
+
+h2 {
+  font-family:'Playfair Display',serif;
+  font-size:36px;
+  font-weight:400;
+  margin:15px 0 25px;
+  color:#816d53;
+}
+
+p {
+  line-height:1.9;
+  font-size:14px;
+}
+
+.divider {
+  width:65px;
+  height:1px;
+  background:#c2a778;
+  margin:25px auto;
+}
+
+.countdown {
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+  margin-top:35px;
+}
+
+.time {
+  background:#fffdf9;
+  border:1px solid #e3d7c5;
+  padding:20px 15px;
+  min-width:90px;
+}
+
+.time strong {
+  display:block;
+  font-family:'Playfair Display',serif;
+  font-size:30px;
+  color:#a88b60;
+}
+
+.time span {
+  font-size:10px;
+  letter-spacing:2px;
+  text-transform:uppercase;
 }
 
 .details {
-    background: #edf5fa;
-    border-radius: 18px;
-    padding: 25px 15px;
-    margin: 25px 0;
-    line-height: 2;
+  background:#fffdf9;
+  border:1px solid #e7dac6;
+  padding:35px 20px;
+  margin:20px auto;
+  max-width:550px;
 }
 
-.details h2 {
-    color: #648ca8;
-    font-size: 25px;
+.details h3 {
+  font-family:'Playfair Display',serif;
+  font-size:24px;
+  font-weight:400;
+  color:#a88b60;
+  margin-bottom:15px;
 }
 
-.details p {
-    font-size: 18px;
+.details p { margin:8px 0; }
+
+a.map {
+  display:inline-block;
+  color:#a88b60;
+  margin-top:15px;
+  border-bottom:1px solid #a88b60;
+  text-decoration:none;
+  font-size:12px;
+  letter-spacing:2px;
+  padding-bottom:5px;
 }
 
-.address {
-    font-size: 17px;
-    margin-top: 10px;
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  max-width:600px;
+  margin:30px auto;
 }
 
-.gift-note {
-    background: #fff5e8;
-    border-radius: 18px;
-    padding: 25px 20px;
-    margin-top: 25px;
-    line-height: 1.8;
+.gallery img {
+  width:100%;
+  height:230px;
+  object-fit:cover;
+  background:#e9dfd0;
 }
 
-.gift-note h2 {
-    color: #ae8548;
-    margin-bottom: 12px;
+.gift {
+  background:#eee6d9;
+  padding:45px 25px;
+  margin-top:20px;
 }
 
-.gift-note p {
-    font-size: 16px;
+.gift p {
+  max-width:600px;
+  margin:auto;
 }
 
-.footer {
-    margin-top: 30px;
-    font-size: 21px;
-    color: #648ca8;
-    font-style: italic;
+.rsvp {
+  max-width:500px;
+  margin:25px auto;
+  background:#fffdf9;
+  padding:30px 20px;
+  border:1px solid #e7dac6;
 }
 
-.decorations {
-    font-size: 25px;
-    margin-top: 20px;
+input, select {
+  display:block;
+  width:100%;
+  padding:14px;
+  margin:15px 0;
+  border:1px solid #ddcfb9;
+  background:white;
+  font-family:'Poppins',sans-serif;
 }
 
-.map-button {
-    display: inline-block;
-    background: #648ca8;
-    color: white;
-    text-decoration: none;
-    padding: 13px 25px;
-    border-radius: 30px;
-    margin-top: 18px;
-    font-family: Arial, sans-serif;
+footer {
+  padding:60px 20px;
+  background:#eae1d3;
 }
 
-.map-button:hover {
-    background: #466d88;
-}
+footer .script { font-size:48px; }
 
+.hidden { display:none; }
+
+@media(max-width:480px) {
+  .cover h1 {font-size:34px;}
+  .script {font-size:55px;}
+  h2 {font-size:29px;}
+  .gallery img {height:160px;}
+}
 </style>
 </head>
 
 <body>
 
-<div class="invitation">
+<!-- OPENING COVER -->
+<div class="hero" id="cover">
+  <div class="cover">
+    <p class="top">A Special Celebration</p>
 
-    <div class="balloons">🎈🎂🎈</div>
-
-    <p class="small-heading">You're Invited To Celebrate</p>
+    <div class="script">You're Invited</div>
 
     <h1>Sebastian's</h1>
 
-    <div class="age">3</div>
+    <div class="number">3rd</div>
 
-    <p class="subtitle">THIRD BIRTHDAY PARTY!</p>
+    <p class="top">Birthday Celebration</p>
 
-    <div class="decorations">
-        ✨ 🎉 🧸 🎉 ✨
-    </div>
-
-    <p style="margin-top:25px; font-size:18px; line-height:1.7;">
-        Three cheers for THREE!<br>
-        Please join us for a special day
-        filled with fun, laughter, and memories!
-    </p>
-
-    <div class="details">
-
-        <h2>🎉 Party Details 🎉</h2>
-
-        <p><strong>Sunday, November 29th</strong></p>
-
-        <p><strong>1:00 PM – 4:00 PM</strong></p>
-
-        <p class="address">
-            📍 401 Ringgold St<br>
-            Peekskill, NY
-        </p>
-
-        <a class="map-button"
-        href="https://www.google.com/maps/search/?api=1&query=401+Ringgold+St+Peekskill+NY"
-        target="_blank">
-            Get Directions
-        </a>
-
-    </div>
-
-    <div class="gift-note">
-
-        <h2>💙 A Special Note About Gifts 💙</h2>
-
-        <p>
-            Your presence is the greatest gift of all!
-            In place of traditional presents, we kindly
-            welcome monetary gifts. Any contributions
-            will be placed into Sebastian's savings
-            account to help support his future.
-            We truly appreciate your love, generosity,
-            and support as we celebrate this special
-            milestone in his life!
-        </p>
-
-    </div>
-
-    <div class="footer">
-        We can't wait to celebrate with you!
-        <br><br>
-        With love, Sebastian & Family ❤️
-    </div>
-
-    <div class="decorations">
-        🎈 🎁 🎂 🎁 🎈
-    </div>
-
+    <button onclick="openInvitation()">
+      OPEN INVITATION
+    </button>
+  </div>
 </div>
+
+<main id="invitation" class="hidden">
+
+<!-- INTRODUCTION -->
+<section>
+  <p class="eyebrow">With love and happiness</p>
+
+  <div class="script">Sebastian</div>
+
+  <h2>Is Turning 3!</h2>
+
+  <div class="divider"></div>
+
+  <p>
+    Three years of love, laughter, and beautiful memories!
+    We would be delighted to have you join us as we celebrate
+    this very special milestone in Sebastian's life.
+  </p>
+</section>
+
+<!-- COUNTDOWN -->
+<section>
+  <p class="eyebrow">Save the Date</p>
+  <h2>Counting Down to the Celebration</h2>
+
+  <div class="divider"></div>
+
+  <div class="countdown">
+    <div class="time">
+      <strong id="days">00</strong>
+      <span>Days</span>
+    </div>
+
+    <div class="time">
+      <strong id="hours">00</strong>
+      <span>Hours</span>
+    </div>
+
+    <div class="time">
+      <strong id="minutes">00</strong>
+      <span>Minutes</span>
+    </div>
+
+    <div class="time">
+      <strong id="seconds">00</strong>
+      <span>Seconds</span>
+    </div>
+  </div>
+</section>
+
+<!-- EVENT DETAILS -->
+<section>
+  <p class="eyebrow">A Day to Remember</p>
+  <h2>Birthday Celebration Details</h2>
+
+  <div class="divider"></div>
+
+  <div class="details">
+    <h3>The Celebration</h3>
+
+    <p>Sunday, November 29, 2026</p>
+    <p>1:00 PM – 4:00 PM</p>
+
+    <div class="divider"></div>
+
+    <h3>Location</h3>
+
+    <p>401 Ringgold St</p>
+    <p>Peekskill, NY</p>
+
+    <a class="map"
+       href="https://www.google.com/maps/search/?api=1&query=401+Ringgold+St+Peekskill+NY"
+       target="_blank">
+       VIEW LOCATION
+    </a>
+  </div>
+</section>
+
+<!-- PHOTO GALLERY -->
+<section>
+  <p class="eyebrow">Our Little Birthday Boy</p>
+  <h2>Sweet Memories</h2>
+
+  <div class="divider"></div>
+
+  <p>
+    Three wonderful years of watching our little boy grow!
+  </p>
+
+  <div class="gallery">
+    <img src="https://placehold.co/500x600/f0e7d9/987c55?text=Sebastian+Photo+1" alt="Sebastian photo 1">
+    <img src="https://placehold.co/500x600/e9dfd0/987c55?text=Sebastian+Photo+2" alt="Sebastian photo 2">
+    <img src="https://placehold.co/500x600/e9dfd0/987c55?text=Sebastian+Photo+3" alt="Sebastian photo 3">
+    <img src="https://placehold.co/500x600/f0e7d9/987c55?text=Sebastian+Photo+4" alt="Sebastian photo 4">
+  </div>
+</section>
+
+<!-- GIFT INFORMATION -->
+<section class="gift">
+  <p class="eyebrow">A Thoughtful Gesture</p>
+
+  <h2>Your Presence Is Our Greatest Gift</h2>
+
+  <div class="divider"></div>
+
+  <p>
+    Your presence and love mean more to us than anything.
+    In place of traditional birthday presents, we kindly
+    request monetary gifts. Any contributions will be
+    placed into Sebastian's savings account to help
+    support his future and give him a little head start
+    as he grows.
+
+    <br><br>
+
+    Thank you for your kindness, generosity, and for
+    being part of his special day!
+  </p>
+</section>
+
+<!-- RSVP -->
+<section>
+  <p class="eyebrow">We Hope You Can Join Us</p>
+
+  <h2>Kindly Confirm Your Attendance</h2>
+
+  <div class="divider"></div>
+
+  <div class="rsvp">
+    <form onsubmit="sendRSVP(event)">
+      <input id="guestName"
+             type="text"
+             placeholder="Your Full Name"
+             required>
+
+      <select id="attendance">
+        <option value="Yes">Yes, I'll be attending!</option>
+        <option value="No">Sorry, I cannot attend</option>
+      </select>
+
+      <select id="guests">
+        <option value="1">1 Guest</option>
+        <option value="2">2 Guests</option>
+        <option value="3">3 Guests</option>
+        <option value="4">4 Guests</option>
+        <option value="5">5 Guests</option>
+        <option value="6">6 Guests</option>
+      </select>
+
+      <button type="submit">SUBMIT RSVP</button>
+    </form>
+
+    <p id="rsvpMessage"></p>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<footer>
+  <p class="eyebrow">With love</p>
+
+  <div class="script">Sebastian</div>
+
+  <h2>We Can't Wait to Celebrate With You!</h2>
+
+  <div class="divider"></div>
+
+  <p>Thank you for being part of our special memories.</p>
+</footer>
+
+</main>
+
+<script>
+function openInvitation() {
+  document.getElementById('cover').style.display = 'none';
+  document.getElementById('invitation').classList.remove('hidden');
+  window.scrollTo(0,0);
+}
+
+function updateCountdown() {
+  const target = new Date('2026-11-29T13:00:00-05:00');
+  const now = new Date();
+  const difference = target - now;
+
+  if (difference <= 0) {
+    document.getElementById('days').textContent = '00';
+    document.getElementById('hours').textContent = '00';
+    document.getElementById('minutes').textContent = '00';
+    document.getElementById('seconds').textContent = '00';
+    return;
+  }
+
+  document.getElementById('days').textContent =
+    Math.floor(difference / 86400000);
+
+  document.getElementById('hours').textContent =
+    Math.floor((difference % 86400000) / 3600000);
+
+  document.getElementById('minutes').textContent =
+    Math.floor((difference % 3600000) / 60000);
+
+  document.getElementById('seconds').textContent =
+    Math.floor((difference % 60000) / 1000);
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+function sendRSVP(event) {
+  event.preventDefault();
+
+  const name = document.getElementById('guestName').value;
+  const attendance = document.getElementById('attendance').value;
+  const guests = document.getElementById('guests').value;
+
+  const message =
+    `Hello! RSVP for Sebastian's birthday:\n` +
+    `Name: ${name}\n` +
+    `Attendance: ${attendance}\n` +
+    `Guests: ${guests}`;
+
+  const whatsappURL =
+    'https://wa.me/?text=' + encodeURIComponent(message);
+
+  window.open(whatsappURL, '_blank');
+}
+</script>
 
 </body>
 </html>
