@@ -4,251 +4,175 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sebastian | Third Birthday</title>
+<title>Sebastian's 3rd Birthday</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-
-html { scroll-behavior:smooth; }
-
-body {
-  background:#f8f4ed;
-  color:#625344;
-  font-family:'Poppins',sans-serif;
-  text-align:center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Background image */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #faf8f4;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  line-height: 1.7;
+}
+
+/* OPENING COVER */
+
 .hero {
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:25px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+
   background:
     linear-gradient(
       rgba(248,244,237,.20),
       rgba(248,244,237,.30)
     ),
     url('Screenshot_20261112_201247_Chrome.jpg');
-  background-size:cover;
-  background-position:center;
+
+  background-size: cover;
+  background-position: center;
 }
 
-/* Glass invitation box */
+/* GLASS COVER */
+
 .cover {
-  max-width:600px;
-  width:100%;
-  padding:65px 25px;
-  border:1px solid rgba(255,255,255,.65);
-  background:rgba(255,253,248,.48);
-  backdrop-filter:blur(5px);
-  -webkit-backdrop-filter:blur(5px);
+  max-width: 600px;
+  width: 100%;
+  padding: 75px 25px;
+
+  border: 1px solid rgba(255,255,255,.75);
+
+  background: rgba(255,253,248,.53);
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
   box-shadow:
     0 10px 40px rgba(70,50,25,.20),
-    inset 0 1px 15px rgba(255,255,255,.45);
+    inset 0 1px 15px rgba(255,255,255,.55);
 }
 
-/* A SPECIAL CELEBRATION */
-.cover .top {
-  letter-spacing:5px;
-  text-transform:uppercase;
-  font-size:20px;
-  color:#000000;
-}
+/* COVER TITLE */
 
-/* Sebastian script */
-.script {
-  font-family:'Great Vibes',cursive;
-  font-size:65px;
-  color:#000000;
-  margin:25px 0 5px;
-}
-
-/* Birthday title */
 .cover h1 {
-  font-family:'Playfair Display',serif;
-  font-size:45px;
-  font-weight:400;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(38px, 8vw, 58px);
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.4;
 }
 
-/* 3rd */
 .number {
-  font-family:'Playfair Display',serif;
-  font-size:52px;
-  color:#000000;
-  line-height:1.2;
-}
-
-/* Glossy Spider-Man inspired button */
-button {
-  cursor:pointer;
-  border:1px solid rgba(255,255,255,.65);
-  background:linear-gradient(
-    135deg,
-    #c75b52,
-    #9d302c,
-    #d77b70
-  );
-  color:white;
-  padding:15px 35px;
-  border-radius:35px;
-  letter-spacing:2px;
-  margin-top:30px;
-  font-family:'Poppins',sans-serif;
-  font-weight:500;
-  box-shadow:
-    0 5px 18px rgba(120,35,30,.30),
-    inset 0 2px 5px rgba(255,255,255,.55);
-  text-shadow:0 1px 2px rgba(0,0,0,.2);
-  transition:.3s;
-}
-
-button:hover {
-  background:linear-gradient(
-    135deg,
-    #db756a,
-    #a82d28,
-    #e28b80
-  );
-  transform:translateY(-2px);
-  box-shadow:
-    0 8px 24px rgba(120,35,30,.4),
-    inset 0 2px 8px rgba(255,255,255,.6);
-}
-
-@media(max-width:480px) {
-  .cover h1 {font-size:38px;}
-  .script {font-size:55px;}
-  .number {font-size:72px;}
-  .cover .top {font-size:13px;}
-  h2 {font-size:29px;}
-  .gallery img {height:160px;}
-}
-
-footer .script { font-size:48px; }
-
-.hidden { display:none; }
-
-@media(max-width:480px) {
-  .cover h1 {font-size:34px;}
-  .script {font-size:55px;}
-  h2 {font-size:29px;}
-  .gallery img {height:160px;}
-}
-</style>
-</head>
-
-<body>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sebastian's 3rd Birthday</title>
-
-<style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Georgia, serif;
-  background: #faf8f4;
-  color: #000;
-  text-align: center;
-  line-height: 1.7;
-}
-
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 25px;
-  background: linear-gradient(145deg, #f5eee2, #fffdf9, #e9dfd0);
-}
-
-.cover {
-  width: 100%;
-  max-width: 550px;
-  padding: 65px 25px;
-  border: 1px solid #d5c5a9;
-  outline: 5px solid rgba(255,255,255,.65);
-  background: rgba(255,255,255,.65);
-  box-shadow: 0 15px 45px rgba(0,0,0,.09);
-}
-
-.top, .eyebrow {
-  font-size: 12px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #000;
-}
-
-.script {
-  font-family: "Brush Script MT", cursive;
-  font-size: clamp(48px, 10vw, 75px);
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(65px, 12vw, 90px);
+  color: #000000;
   line-height: 1.3;
-  color: #000;
 }
 
-.cover h1 {
-  font-size: clamp(36px, 8vw, 55px);
-  font-weight: normal;
-  letter-spacing: 3px;
-  color: #000;
-}
+/* WINE RED GLASS BUTTON */
 
-.number {
-  font-size: 85px;
-  line-height: 1.2;
-  color: #000;
-}
+.open-button {
+  position: relative;
+  overflow: hidden;
 
-button {
-  margin-top: 30px;
-  padding: 15px 35px;
-  border: 1px solid #000;
-  background: transparent;
-  color: #000;
-  font-family: Georgia, serif;
-  letter-spacing: 2px;
   cursor: pointer;
-  transition: .3s;
+  margin-top: 35px;
+  padding: 17px 40px;
+
+  border-radius: 40px;
+  border: 1px solid rgba(255,255,255,.8);
+
+  background: linear-gradient(
+    145deg,
+    #b34b60 0%,
+    #84243e 45%,
+    #4c1025 100%
+  );
+
+  color: #ffb7c4;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 3px;
+
+  box-shadow:
+    0 8px 22px rgba(91,15,36,.35),
+    inset 0 2px 6px rgba(255,255,255,.65),
+    inset 0 -3px 7px rgba(30,0,10,.4);
+
+  text-shadow: 0 1px 3px rgba(0,0,0,.3);
+
+  transition: all .3s ease;
 }
 
-button:hover {
-  background: #000;
-  color: white;
+/* GLASS REFLECTION */
+
+.open-button::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 12%;
+  width: 76%;
+  height: 40%;
+
+  border-radius: 30px;
+
+  background: linear-gradient(
+    rgba(255,255,255,.4),
+    rgba(255,255,255,0)
+  );
+
+  pointer-events: none;
 }
+
+.open-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 28px rgba(91,15,36,.45),
+    inset 0 2px 8px rgba(255,255,255,.7);
+}
+
+/* HIDDEN CONTENT */
 
 .hidden {
   display: none;
 }
 
+/* SECTIONS */
+
 section {
-  padding: 75px 20px;
+  padding: 70px 20px;
   max-width: 850px;
   margin: auto;
 }
 
-section h2, footer h2 {
+section h2 {
+  font-family: 'Playfair Display', serif;
   font-size: clamp(25px, 5vw, 34px);
-  font-weight: normal;
-  line-height: 1.3;
+  font-weight: 400;
+  line-height: 1.4;
   margin: 12px 0;
-  color: #000;
+  color: #000000;
 }
 
-section p, footer p {
-  color: #000;
+section p {
+  color: #000000;
   font-size: 16px;
 }
 
@@ -259,7 +183,14 @@ section p, footer p {
   margin: 25px auto;
 }
 
-/* GLOSSY COUNTDOWN */
+/* INTRODUCTION */
+
+.intro-message {
+  max-width: 650px;
+  margin: auto;
+}
+
+/* COUNTDOWN */
 
 .countdown {
   display: grid;
@@ -271,13 +202,16 @@ section p, footer p {
 .time {
   padding: 25px 5px;
   border-radius: 16px;
+
   background: linear-gradient(
     145deg,
     #ffffff 0%,
     #f4eee4 45%,
     #e8dece 100%
   );
+
   border: 1px solid rgba(255,255,255,.9);
+
   box-shadow:
     inset 0 2px 5px rgba(255,255,255,.95),
     0 8px 20px rgba(0,0,0,.10);
@@ -286,17 +220,16 @@ section p, footer p {
 .time strong {
   display: block;
   font-size: clamp(28px, 6vw, 43px);
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.3;
-  color: #000;
-  text-shadow: 0 2px 3px rgba(255,255,255,.9);
+  color: #000000;
 }
 
 .time span {
   font-size: 11px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
 }
 
 /* EVENT DETAILS */
@@ -309,9 +242,11 @@ section p, footer p {
 }
 
 .details h3 {
-  font-size: 20px;
-  font-weight: normal;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 400;
   margin-bottom: 12px;
+  color: #000000;
 }
 
 .details p {
@@ -322,20 +257,33 @@ section p, footer p {
   display: inline-block;
   margin-top: 22px;
   padding: 12px 25px;
-  border: 1px solid #000;
-  color: #000;
+
+  border: 1px solid #000000;
+
+  color: #000000;
   text-decoration: none;
+
   font-size: 12px;
   letter-spacing: 2px;
+
+  transition: .3s;
 }
 
-/* HORIZONTAL PHOTO GALLERY */
+.map:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* PHOTO GALLERY */
 
 .gallery {
   display: flex;
   gap: 18px;
+
   overflow-x: auto;
+
   padding: 20px 5px 25px;
+
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
@@ -344,10 +292,14 @@ section p, footer p {
   flex: 0 0 78%;
   max-width: 320px;
   height: 340px;
+
   object-fit: cover;
+
   border-radius: 15px;
-  border: 5px solid white;
+  border: 5px solid #ffffff;
+
   box-shadow: 0 8px 22px rgba(0,0,0,.13);
+
   scroll-snap-align: center;
 }
 
@@ -363,11 +315,11 @@ section p, footer p {
 .scroll-hint {
   font-size: 11px;
   letter-spacing: 2px;
-  color: #000;
+  color: #000000;
   margin-top: 5px;
 }
 
-/* GIFT SECTION */
+/* GIFT MESSAGE */
 
 .gift {
   background: #f2ede4;
@@ -375,24 +327,43 @@ section p, footer p {
   padding: 75px 25px;
 }
 
-.gift p {
+.gift h2 {
   max-width: 650px;
+  margin: 12px auto;
+}
+
+.gift p {
+  max-width: 620px;
   margin: auto;
 }
 
-/* FOOTER */
+/* CLOSING */
 
 footer {
-  padding: 75px 20px;
+  padding: 60px 20px;
   background: #faf8f4;
 }
 
-footer .script {
-  margin: 15px 0;
+footer h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #000000;
 }
 
-@media (max-width: 500px) {
+footer p {
+  color: #000000;
+}
+
+/* MOBILE */
+
+@media(max-width: 500px) {
+
   section {
+    padding: 60px 18px;
+  }
+
+  .cover {
     padding: 60px 18px;
   }
 
@@ -414,6 +385,7 @@ footer .script {
     flex-basis: 85%;
     height: 300px;
   }
+
 }
 </style>
 </head>
@@ -423,23 +395,23 @@ footer .script {
 <!-- OPENING COVER -->
 
 <div class="hero" id="cover">
+
   <div class="cover">
-
-    <p class="top">A Special Celebration</p>
-
-    <div class="script">You're Invited</div>
 
     <h1>Sebastian's</h1>
 
-    <div class="number">Third</div>
+    <div class="number">3rd</div>
 
-    <p class="top">Birthday Celebration</p>
+    <h1>Birthday</h1>
 
-    <button onclick="openInvitation()">
+    <button
+      class="open-button"
+      onclick="openInvitation()">
       OPEN INVITATION
     </button>
 
   </div>
+
 </div>
 
 <main id="invitation" class="hidden">
@@ -447,27 +419,27 @@ footer .script {
 <!-- INTRODUCTION -->
 
 <section>
-  <p class="eyebrow">With Love and Happiness</p>
 
-  <div class="script">Sebastian</div>
+  <div class="intro-message">
 
-  <h2>Is Turning 3!</h2>
+    <h2>Join Us!</h2>
 
-  <div class="divider"></div>
+    <div class="divider"></div>
 
-  <p>
-    Three years of love, laughter, and beautiful memories!
-    We would be delighted to have you join us as we celebrate
-    this very special milestone in Sebastian's life.
-  </p>
+    <p>
+      Join us for a special get-together to celebrate
+      Sebastian and Jonathan's birthdays!
+    </p>
+
+  </div>
+
 </section>
 
 <!-- COUNTDOWN -->
 
 <section>
-  <p class="eyebrow">Save the Date</p>
 
-  <h2>Counting Down to the Celebration</h2>
+  <h2>Counting Down</h2>
 
   <div class="divider"></div>
 
@@ -494,22 +466,21 @@ footer .script {
     </div>
 
   </div>
+
 </section>
 
-<!-- EVENT DETAILS -->
+<!-- DATE AND LOCATION -->
 
 <section>
-  <p class="eyebrow">A Day to Remember</p>
 
-  <h2>Birthday Celebration Details</h2>
+  <h2>Celebration Details</h2>
 
   <div class="divider"></div>
 
   <div class="details">
 
-    <h3>The Celebration</h3>
+    <h3>Sunday, November 29, 2026</h3>
 
-    <p>Sunday, November 29, 2026</p>
     <p>1:00 PM – 4:00 PM</p>
 
     <div class="divider"></div>
@@ -517,70 +488,67 @@ footer .script {
     <h3>Location</h3>
 
     <p>401 Ringgold St</p>
+
     <p>Peekskill, NY</p>
 
-    <a class="map"
-       href="https://www.google.com/maps/search/?api=1&query=401+Ringgold+St+Peekskill+NY"
-       target="_blank">
-       VIEW LOCATION
+    <a
+      class="map"
+      href="https://www.google.com/maps/search/?api=1&query=401+Ringgold+St+Peekskill+NY"
+      target="_blank"
+      rel="noopener noreferrer">
+      VIEW LOCATION
     </a>
 
   </div>
+
 </section>
 
 <!-- PHOTO GALLERY -->
 
 <section>
-  <p class="eyebrow">Our Little Birthday Boy</p>
 
   <h2>Sweet Memories</h2>
 
   <div class="divider"></div>
 
-  <p>Three wonderful years of watching our little boy grow!</p>
-
   <div class="gallery">
 
-    <img src="Screenshot_20261112_200521_Photos.jpg"
-         alt="Sebastian photo 1">
+    <img
+      src="Screenshot_20261112_200521_Photos.jpg"
+      alt="Sebastian photo 1">
 
-    <img src="Screenshot_20261112_200634_Photos.jpg"
-         alt="Sebastian photo 2">
+    <img
+      src="Screenshot_20261112_200634_Photos.jpg"
+      alt="Sebastian photo 2">
 
-    <img src="Screenshot_20261112_200843_Photos.jpg"
-         alt="Sebastian photo 3">
+    <img
+      src="Screenshot_20261112_200843_Photos.jpg"
+      alt="Sebastian photo 3">
 
-    <img src="Screenshot_20261112_201028_Photos.jpg"
-         alt="Sebastian photo 4">
+    <img
+      src="Screenshot_20261112_201028_Photos.jpg"
+      alt="Sebastian photo 4">
 
   </div>
 
-  <p class="scroll-hint">← SWIPE TO SEE MORE PHOTOS →</p>
+  <p class="scroll-hint">
+    ← SWIPE TO SEE MORE PHOTOS →
+  </p>
 
 </section>
 
-<!-- GIFT INFORMATION -->
+<!-- GIFT MESSAGE -->
 
 <section class="gift">
 
-  <p class="eyebrow">A Thoughtful Gesture</p>
-
-  <h2>Your Presence Is Our Greatest Gift</h2>
+  <h2>No Gifts, Please!</h2>
 
   <div class="divider"></div>
 
   <p>
-    Your presence and love mean more to us than anything.
-    In place of traditional birthday presents, we kindly
-    request monetary gifts. Any contributions will be
-    placed into Sebastian's savings account to help
-    support his future and give him a little head start
-    as he grows.
-
-    <br><br>
-
-    Thank you for your kindness, generosity, and for
-    being part of his special day!
+    If you'd like to give Sebastian a few dollars,
+    they'll go straight into his account for his car.
+    He's starting early!
   </p>
 
 </section>
@@ -589,15 +557,11 @@ footer .script {
 
 <footer>
 
-  <p class="eyebrow">With Love</p>
-
-  <div class="script">Sebastian</div>
-
   <h2>We Can't Wait to Celebrate With You!</h2>
 
   <div class="divider"></div>
 
-  <p>Thank you for being part of our special memories.</p>
+  <p>With love and thanks for celebrating with us!</p>
 
 </footer>
 
@@ -605,22 +569,34 @@ footer .script {
 
 <script>
 
+/* OPEN INVITATION */
+
 function openInvitation() {
+
   document.getElementById('cover').style.display = 'none';
+
   document.getElementById('invitation').classList.remove('hidden');
+
   window.scrollTo(0, 0);
+
 }
+
+/* COUNTDOWN */
 
 function updateCountdown() {
 
   const target = new Date('2026-11-29T13:00:00-05:00');
+
   const now = new Date();
+
   const difference = target - now;
 
   if (difference <= 0) {
+
     ['days','hours','minutes','seconds'].forEach(id => {
       document.getElementById(id).textContent = '00';
     });
+
     return;
   }
 
@@ -639,9 +615,11 @@ function updateCountdown() {
 }
 
 updateCountdown();
+
 setInterval(updateCountdown, 1000);
 
 </script>
 
 </body>
 </html>
+
