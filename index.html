@@ -143,9 +143,288 @@ footer .script { font-size:48px; }
 
 <body>
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sebastian's 3rd Birthday</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: #faf8f4;
+  color: #000;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  background: linear-gradient(145deg, #f5eee2, #fffdf9, #e9dfd0);
+}
+
+.cover {
+  width: 100%;
+  max-width: 550px;
+  padding: 65px 25px;
+  border: 1px solid #d5c5a9;
+  outline: 5px solid rgba(255,255,255,.65);
+  background: rgba(255,255,255,.65);
+  box-shadow: 0 15px 45px rgba(0,0,0,.09);
+}
+
+.top, .eyebrow {
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.script {
+  font-family: "Brush Script MT", cursive;
+  font-size: clamp(48px, 10vw, 75px);
+  line-height: 1.3;
+  color: #000;
+}
+
+.cover h1 {
+  font-size: clamp(36px, 8vw, 55px);
+  font-weight: normal;
+  letter-spacing: 3px;
+  color: #000;
+}
+
+.number {
+  font-size: 85px;
+  line-height: 1.2;
+  color: #000;
+}
+
+button {
+  margin-top: 30px;
+  padding: 15px 35px;
+  border: 1px solid #000;
+  background: transparent;
+  color: #000;
+  font-family: Georgia, serif;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+button:hover {
+  background: #000;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+section {
+  padding: 75px 20px;
+  max-width: 850px;
+  margin: auto;
+}
+
+section h2, footer h2 {
+  font-size: clamp(25px, 5vw, 34px);
+  font-weight: normal;
+  line-height: 1.3;
+  margin: 12px 0;
+  color: #000;
+}
+
+section p, footer p {
+  color: #000;
+  font-size: 16px;
+}
+
+.divider {
+  width: 65px;
+  height: 1px;
+  background: #bba987;
+  margin: 25px auto;
+}
+
+/* GLOSSY COUNTDOWN */
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 35px;
+}
+
+.time {
+  padding: 25px 5px;
+  border-radius: 16px;
+  background: linear-gradient(
+    145deg,
+    #ffffff 0%,
+    #f4eee4 45%,
+    #e8dece 100%
+  );
+  border: 1px solid rgba(255,255,255,.9);
+  box-shadow:
+    inset 0 2px 5px rgba(255,255,255,.95),
+    0 8px 20px rgba(0,0,0,.10);
+}
+
+.time strong {
+  display: block;
+  font-size: clamp(28px, 6vw, 43px);
+  font-weight: normal;
+  line-height: 1.3;
+  color: #000;
+  text-shadow: 0 2px 3px rgba(255,255,255,.9);
+}
+
+.time span {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+/* EVENT DETAILS */
+
+.details {
+  padding: 35px 20px;
+  background: #f2ede4;
+  border: 1px solid #e2d7c5;
+  border-radius: 12px;
+}
+
+.details h3 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+
+.details p {
+  margin: 5px 0;
+}
+
+.map {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 12px 25px;
+  border: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+/* HORIZONTAL PHOTO GALLERY */
+
+.gallery {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  padding: 20px 5px 25px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gallery img {
+  flex: 0 0 78%;
+  max-width: 320px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 5px solid white;
+  box-shadow: 0 8px 22px rgba(0,0,0,.13);
+  scroll-snap-align: center;
+}
+
+.gallery::-webkit-scrollbar {
+  height: 6px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+  background: #c6b79e;
+  border-radius: 10px;
+}
+
+.scroll-hint {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #000;
+  margin-top: 5px;
+}
+
+/* GIFT SECTION */
+
+.gift {
+  background: #f2ede4;
+  max-width: 100%;
+  padding: 75px 25px;
+}
+
+.gift p {
+  max-width: 650px;
+  margin: auto;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 75px 20px;
+  background: #faf8f4;
+}
+
+footer .script {
+  margin: 15px 0;
+}
+
+@media (max-width: 500px) {
+  section {
+    padding: 60px 18px;
+  }
+
+  .countdown {
+    gap: 8px;
+  }
+
+  .time {
+    padding: 20px 2px;
+    border-radius: 12px;
+  }
+
+  .time span {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .gallery img {
+    flex-basis: 85%;
+    height: 300px;
+  }
+}
+</style>
+</head>
+
+<body>
+
 <!-- OPENING COVER -->
+
 <div class="hero" id="cover">
   <div class="cover">
+
     <p class="top">A Special Celebration</p>
 
     <div class="script">You're Invited</div>
@@ -159,14 +438,16 @@ footer .script { font-size:48px; }
     <button onclick="openInvitation()">
       OPEN INVITATION
     </button>
+
   </div>
 </div>
 
 <main id="invitation" class="hidden">
 
 <!-- INTRODUCTION -->
+
 <section>
-  <p class="eyebrow">With love and happiness</p>
+  <p class="eyebrow">With Love and Happiness</p>
 
   <div class="script">Sebastian</div>
 
@@ -182,13 +463,16 @@ footer .script { font-size:48px; }
 </section>
 
 <!-- COUNTDOWN -->
+
 <section>
   <p class="eyebrow">Save the Date</p>
+
   <h2>Counting Down to the Celebration</h2>
 
   <div class="divider"></div>
 
   <div class="countdown">
+
     <div class="time">
       <strong id="days">00</strong>
       <span>Days</span>
@@ -208,17 +492,21 @@ footer .script { font-size:48px; }
       <strong id="seconds">00</strong>
       <span>Seconds</span>
     </div>
+
   </div>
 </section>
 
 <!-- EVENT DETAILS -->
+
 <section>
   <p class="eyebrow">A Day to Remember</p>
+
   <h2>Birthday Celebration Details</h2>
 
   <div class="divider"></div>
 
   <div class="details">
+
     <h3>The Celebration</h3>
 
     <p>Sunday, November 29, 2026</p>
@@ -236,30 +524,45 @@ footer .script { font-size:48px; }
        target="_blank">
        VIEW LOCATION
     </a>
+
   </div>
 </section>
 
 <!-- PHOTO GALLERY -->
+
 <section>
   <p class="eyebrow">Our Little Birthday Boy</p>
+
   <h2>Sweet Memories</h2>
 
   <div class="divider"></div>
 
-  <p>
-    Three wonderful years of watching our little boy grow!
-  </p>
+  <p>Three wonderful years of watching our little boy grow!</p>
 
   <div class="gallery">
-    <img src="Screenshot_20261112_200521_Photos.jpg" alt="Screenshot_20261112_200521_Photos.jpg">
-    <img src="Screenshot_20261112_200634_Photos.jpg" alt="Screenshot_20261112_200634_Photos.jpg">
-    <img src="Screenshot_20261112_200843_Photos.jpg" alt="Screenshot_20261112_200843_Photos.jpg">
-    <img src="Screenshot_20261112_201028_Photos.jpg" alt="Screenshot_20261112_201028_Photos.jpg">
+
+    <img src="Screenshot_20261112_200521_Photos.jpg"
+         alt="Sebastian photo 1">
+
+    <img src="Screenshot_20261112_200634_Photos.jpg"
+         alt="Sebastian photo 2">
+
+    <img src="Screenshot_20261112_200843_Photos.jpg"
+         alt="Sebastian photo 3">
+
+    <img src="Screenshot_20261112_201028_Photos.jpg"
+         alt="Sebastian photo 4">
+
   </div>
+
+  <p class="scroll-hint">← SWIPE TO SEE MORE PHOTOS →</p>
+
 </section>
 
 <!-- GIFT INFORMATION -->
+
 <section class="gift">
+
   <p class="eyebrow">A Thoughtful Gesture</p>
 
   <h2>Your Presence Is Our Greatest Gift</h2>
@@ -279,47 +582,14 @@ footer .script { font-size:48px; }
     Thank you for your kindness, generosity, and for
     being part of his special day!
   </p>
-</section>
 
-<!-- RSVP -->
-<section>
-  <p class="eyebrow">We Hope You Can Join Us</p>
-
-  <h2>Kindly Confirm Your Attendance</h2>
-
-  <div class="divider"></div>
-
-  <div class="rsvp">
-    <form onsubmit="sendRSVP(event)">
-      <input id="guestName"
-             type="text"
-             placeholder="Your Full Name"
-             required>
-
-      <select id="attendance">
-        <option value="Yes">Yes, I'll be attending!</option>
-        <option value="No">Sorry, I cannot attend</option>
-      </select>
-
-      <select id="guests">
-        <option value="1">1 Guest</option>
-        <option value="2">2 Guests</option>
-        <option value="3">3 Guests</option>
-        <option value="4">4 Guests</option>
-        <option value="5">5 Guests</option>
-        <option value="6">6 Guests</option>
-      </select>
-
-      <button type="submit">SUBMIT RSVP</button>
-    </form>
-
-    <p id="rsvpMessage"></p>
-  </div>
 </section>
 
 <!-- CLOSING -->
+
 <footer>
-  <p class="eyebrow">With love</p>
+
+  <p class="eyebrow">With Love</p>
 
   <div class="script">Sebastian</div>
 
@@ -328,27 +598,29 @@ footer .script { font-size:48px; }
   <div class="divider"></div>
 
   <p>Thank you for being part of our special memories.</p>
+
 </footer>
 
 </main>
 
 <script>
+
 function openInvitation() {
   document.getElementById('cover').style.display = 'none';
   document.getElementById('invitation').classList.remove('hidden');
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
 }
 
 function updateCountdown() {
+
   const target = new Date('2026-11-29T13:00:00-05:00');
   const now = new Date();
   const difference = target - now;
 
   if (difference <= 0) {
-    document.getElementById('days').textContent = '00';
-    document.getElementById('hours').textContent = '00';
-    document.getElementById('minutes').textContent = '00';
-    document.getElementById('seconds').textContent = '00';
+    ['days','hours','minutes','seconds'].forEach(id => {
+      document.getElementById(id).textContent = '00';
+    });
     return;
   }
 
@@ -363,30 +635,15 @@ function updateCountdown() {
 
   document.getElementById('seconds').textContent =
     Math.floor((difference % 60000) / 1000);
+
 }
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
-function sendRSVP(event) {
-  event.preventDefault();
-
-  const name = document.getElementById('guestName').value;
-  const attendance = document.getElementById('attendance').value;
-  const guests = document.getElementById('guests').value;
-
-  const message =
-    `Hello! RSVP for Sebastian's birthday:\n` +
-    `Name: ${name}\n` +
-    `Attendance: ${attendance}\n` +
-    `Guests: ${guests}`;
-
-  const whatsappURL =
-    'https://wa.me/?text=' + encodeURIComponent(message);
-
-  window.open(whatsappURL, '_blank');
-}
 </script>
 
 </body>
 </html>
+
+}
